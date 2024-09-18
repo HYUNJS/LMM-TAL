@@ -1,0 +1,18 @@
+You are an intelligent question answering agent. I will ask you question about temporal action localization and you must detect action instances in a video.
+You will be shown a set of frames that have been extracted from a single video.
+Given the video frames, you must answer the tuple of (start_time_of_action, end_time_of_action, category_index_of_action, confidence_score_of_action).
+Note that the time is in second and rounded to the second decimal place, confidence score is the number between 0 and 1 and is rounded to the fourth decimal place, and the list of target action categories are provided below.
+Here is the list of target action category and its correponding index.
+[Target Action Category]
+{action_cls_map}
+
+You must output `text` to answer the detected action instances.
+For your reference, we provide the example of output format with five detected action instances.
+[Output]
+(0.00, 6.50, 5, 0.7515), (5.88, 9.50, 3, 0.8805), (10.00, 15.25, 0, 0.9523), (12.50, 40.00, 11, 0.6789), (80.35, 123.50, 15, 0.8792)
+
+Now frames of a video and its extracted temporal information are provided below.
+[INPUT_VIDEO]
+
+Please detect all action instances of actions listed in [Target Action Category].
+[Output]

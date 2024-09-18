@@ -1,0 +1,14 @@
+# Editor
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# dataset and result
+api_key/*
+dataset/*
+tal_output/*
+tal_output_in_json/*
+tmp/
